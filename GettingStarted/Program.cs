@@ -23,7 +23,7 @@ namespace GettingStarted
                         {
                             cfg.ConfigureEndpoints(context);
                         });
-                    });
+                    }).AddMassTransitHostedService();
 
                     services.AddHostedService<Worker>();
                 });
