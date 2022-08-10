@@ -19,7 +19,7 @@ namespace GettingStarted
                     {
                         x.AddConsumer<MessageConsumer>();
 
-                        x.UsingRabbitMq((context,cfg) =>
+                        x.UsingInMemory((context,cfg) =>
                         {
                             cfg.ConfigureEndpoints(context);
                         });
